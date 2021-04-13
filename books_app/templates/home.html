@@ -4,6 +4,8 @@
 
 You are visiting the homepage.
 
-<!-- TODO: Display a list of users here, with each linking to their profile -->
+  {% for user in users %}
+    <a href="/profile/{{ user.username }}">{{ user.username }}</a>
+  {% endfor %}
 
 {% endblock %}
